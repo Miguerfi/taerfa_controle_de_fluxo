@@ -12,9 +12,12 @@ public class Main {
             notas.add(nota);
         }
         Integer media = calcularMedia(notas);
-        if(media >= 5) {
+        if(media >= 7) {
             System.out.println("Aprovado");
-        } else {
+        }
+        if(media >= 5 && media < 7) {
+            System.out.println("Recuperação");
+        }else{
             System.out.println("Reprovado");
         }
     }
